@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  
+  <title>Tierytek Construction Steel Company</title>
+
+  <!-- Google Fonts (similar vibe to Pivot) -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet"/>
+
+  <!-- Icons (Font Awesome) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <!-- Animate.css for subtle fade/slide effects -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+  <!-- Swiper for hero slider -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css"/>
+
+  <!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css"/>
+
+<!-- Swiper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+
+  <!-- Your styles -->
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+ <header class="site-header">
+  <div class="container">
+    <!-- Logo -->
+    <div class="logo">
+      <img src="Logo.JPEG" alt="Tierytek Logo" style="max-height: 60px;">
+    </div>
+
+    <!-- Header -->
+<nav class="main-nav">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li class="has-submenu">
+      <a href="services.html">Services</a>
+      <ul class="submenu">
+        <li><a href="services.html#pre-construction">Pre-Construction</a></li>
+        <li><a href="services.html#general-construction">General Construction</a></li>
+        <li><a href="services.html#house-renovation">House Renovation</a></li>
+        <li><a href="services.html#plumbing">Plumbing</a></li>
+      </ul>
+    </li>
+    <li><a href="index.html#projects">Projects</a></li>
+    <li><a href="index.html#news">News</a></li>
+    <li><a href="index.html#abouts">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+    <!-- Quotation Button -->
+    <div class="header-btn">
+      <a href="quote.html"  class="btn btn-primary">Quotation</a>
+    </div>
+  </div>
+</header>
+
+
+<section id="home" class="hero section">
+  <div class="swiper hero-swiper">
+    <div class="swiper-wrapper">
+      <!-- Slide 1 -->
+      <div class="swiper-slide hero-slide" style="--bg:url('hero1.png')">
+        <div class="hero-overlay"></div>
+        <div class="hero-text animate__animated animate__fadeInUp">
+          <h1>HOUSE RENOVATION</h1>
+          <p>Reliable steel, modern design, expert finishing.</p>
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+        </div>
+      </div>
+      <!-- Slide 2 -->
+      <div class="swiper-slide hero-slide" style="--bg:url('hero2.png')">
+        <div class="hero-overlay"></div>
+        <div class="hero-text animate__animated animate__fadeInUp">
+          <h1>STEEL CONSTRUCTION EXPERTS</h1>
+          <p>Industrial-grade frameworks built to last.</p>
+          <a href="#services" class="btn btn-outline">Our Services</a>
+        </div>
+      </div>
+      <!-- Slide 3 -->
+      <div class="swiper-slide hero-slide" style="--bg:url('hero3.png')">
+        <div class="hero-overlay"></div>
+        <div class="hero-text animate__animated animate__fadeInUp">
+          <h1>QUALITY, SAFETY & DELIVERY.</h1>
+          <p>We build with precision and deliver on time, always
+            .</p>
+          <a href="#quote" class="btn btn-primary">Get a Quote</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Swiper controls -->
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+</section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const heroSwiper = new Swiper('.hero-swiper', {
+      loop: true,
+      autoplay: {
+        delay: 3500,
+        disableOnInteraction: false
+      },
+      effect: 'fade',
+      fadeEffect: { crossFade: true },
+      speed: 800,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+      }
+    });
+  });
+</script>
+
+
+
+    <!-- Tierytek Construction Intro Slide -->
+<section class="intro-slide section">
+  <div class="container">
+    <div class="intro-grid">
+      <!-- Text Block -->
+      <div class="intro-text">
+        <h2>WE ARE EXPERTS IN CONSTRUCTION FIELD</h2>
+        <p>
+          At Tierytek Construction, we specialize in steel frameworks, roofing, and renovation projects across Nigeria. Our team delivers durable, modern, and efficient solutions tailored to your needs.
+        </p>
+        <p>
+          From industrial-grade structures to residential transformations, we bring precision, safety, and innovation to every site we touch.
+        </p>
+      </div>
+
+      <!-- Image Block --> 
+      <div class="intro-image">
+        <img src="construction-worker.jpg" alt="Tierytek Construction Worker">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="services" class="services section">
+  <div class="container">
+    <div class="section-header">
+      <h2>Our Services</h2>
+      <p>From steel structures to finishing touches, Tierytex delivers reliable, modern construction solutions.</p>
+    </div>
+
+    <div class="services-grid">
+      <!-- Visible (first 3) -->
+      <div class="service-box">
+        <i class="fa-solid fa-industry service-icon"></i>
+        <h3>Steel Construction</h3>
+        <p>Precision-built frames and beams engineered for strength and longevity.</p>
+      </div>
+
+      <div class="service-box">
+        <i class="fa-solid fa-helmet-safety service-icon"></i>
+        <h3>Roofing Solutions</h3>
+        <p>Weather-resistant roofs installed with safety, speed, and durability.</p>
+      </div>
+
+      <div class="service-box">
+        <i class="fa-solid fa-screwdriver-wrench service-icon"></i>
+        <h3>Renovation</h3>
+        <p>Revamping spaces with modern finishes and thoughtful functionality.</p>
+      </div>
+
+      <!-- Hidden (next 3) -->
+      <div class="service-box hidden-service">
+        <i class="fa-solid fa-building service-icon"></i>
+        <h3>Structural Engineering</h3>
+        <p>Expert structural planning to ensure safety and compliance.</p>
+      </div>
+
+      <div class="service-box hidden-service">
+        <i class="fa-solid fa-drafting-compass service-icon"></i>
+        <h3>Architectural Design</h3>
+        <p>Clean, practical designs that turn requirements into reality.</p>
+      </div>
+
+      <div class="service-box hidden-service">
+        <i class="fa-solid fa-truck service-icon"></i>
+        <h3>Logistics & Supply</h3>        
+        <p>On-time delivery of materials for smooth project execution.</p> 
+      </div>
+    </div>
+
+    <div class="services-btn">
+       <a href="services.html">View More services</a></li>
+    </div>
+  </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="projects section">
+  <div class="container">
+    <div class="section-header">
+      <h2>Our Projects</h2>
+      <p>Showcasing the strength, precision, and innovation behind Tierytex Construction.</p>
+    </div>
+
+    <div class="projects-grid">
+      <!-- Project 1 -->
+      <figure class="project-item">
+        <img src="images/" alt="Steel Framework Project">
+        <figcaption>
+          <h3>Steel Framework</h3>
+          <p>Industrial-grade steel structures built for durability and safety.</p>
+        </figcaption>
+      </figure>
+
+      <!-- Project 2 -->
+      <figure class="project-item">
+        <img src="" alt="Roofing Project">
+        <figcaption>
+          <h3>Roofing Solutions</h3>
+          <p>Weather-resistant roofing installed with precision and care.</p>
+        </figcaption>
+      </figure>
+
+      <!-- Project 3 -->
+      <figure class="project-item">
+        <img src="" alt="Renovation Project">
+        <figcaption>
+          <h3>Renovation</h3>
+          <p>Transforming old spaces into modern, functional environments.</p>
+        </figcaption>
+      </figure>
+
+      <!-- Project 4 -->
+      <figure class="project-item">
+        <img src="" alt="Commercial Building Project">
+        <figcaption>
+          <h3>Commercial Building</h3>
+          <p>Efficiently managed projects delivered on time and within budget.</p>
+        </figcaption>
+      </figure>
+
+      <!-- Project 5 -->
+      <figure class="project-item">
+        <img src="" alt="Architectural Design Project">
+        <figcaption>
+          <h3>Architectural Design</h3>
+          <p>Creative designs that bring visions to life.</p>
+        </figcaption>
+      </figure>
+
+      <!-- Project 6 -->
+      <figure class="project-item">
+        <img src="" alt="Logistics Project">
+        <figcaption>
+          <h3>Logistics & Supply</h3>
+          <p>Reliable delivery of materials for seamless construction flow.</p>
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- News Section -->
+<section id="news" class="news section">
+  <div class="container">
+    <div class="section-header">
+      <h2>Latest News</h2>
+      <p>Stay updated with Tierytex Construction’s latest projects, industry insights, and company updates.</p>
+    </div>
+
+    <div class="news-grid">
+      <!-- News 1 -->
+      <article class="news-item">
+        <img src="Steel construction.png" alt="Steel Construction Update">
+        <div class="news-content">
+          <span class="news-date">Dec 10, 2025</span>
+          <h3>Tierytek Expands Steel Construction Projects</h3>
+          <p>Our team recently completed a landmark steel framework project, setting new standards in durability.</p>
+          <a href="#home" class="read-more">Read More</a>
+        </div>
+      </article>
+
+      <!-- News 2 -->
+      <article class="news-item">
+        <img src="Roofing solution.png" alt="Roofing Solutions">
+        <div class="news-content">
+          <span class="news-date">Nov 28, 2025</span>
+          <h3>Innovative Roofing Solutions for Urban Homes</h3>
+          <p>We introduced advanced roofing materials designed to withstand Nigeria’s toughest weather conditions.</p>
+          <a href="#home" class="read-more">Read More</a>
+        </div>
+      </article>
+
+      <!-- News 3 -->
+      <article class="news-item">
+        <img src="Renovation project.png" alt="Renovation Project">
+        <div class="news-content">
+          <span class="news-date">Nov 15, 2025</span>
+          <h3>Renovation Project Transforms Old Spaces</h3>
+          <p>Tierytek recently renovated a commercial space, blending modern design with functional layouts.</p>
+          <a href="#home" class="read-more">Read More</a>
+        </div>
+      </article>
+    </div>
+
+    <div class="news-btn">
+      <a href="#home" class="btn btn-primary">View All News</a>
+    </div>
+  </div>
+</section>
+
+  <div class="container">
+    <div class="about-grid">
+      <!-- Text Block -->
+      <div class="about-text">
+        <h2>About Tierytek Construction</h2>
+        <p>
+          At Tierytek Construction, we are passionate about building structures that stand the test of time. 
+          With expertise in steel construction, roofing, and renovation, we deliver projects that combine 
+          durability, safety, and modern design.
+        </p>
+        <p>
+          Our mission is simple: to transform ideas into reality through precision engineering, 
+          innovative solutions, and a commitment to excellence. From residential projects to 
+          large‑scale commercial developments, we bring integrity and professionalism to every site.
+        </p>
+        <ul class="about-list">
+          <li><i class="fa-solid fa-check"></i> Experienced engineers and architects</li>
+          <li><i class="fa-solid fa-check"></i> Modern equipment and techniques</li>
+          <li><i class="fa-solid fa-check"></i> Commitment to safety and quality</li>
+          <li><i class="fa-solid fa-check"></i> On‑time project delivery</li>
+        </ul>
+        <a href="contact.html" class="btn btn-primary">Contact Us</a>
+      </div>
+
+      <!-- Image Block -->
+      <div class="about-image">
+        <img src="about.jpg" alt="About Tierytex Construction">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- S: Quote Banner -->
+<section class="quote-banner">
+  <div class="container">
+    <h2>Contact Us For Projects or Need a Quotation</h2>
+    <a href="quote.html" class="btn btn-primary">GET A QUOTE</a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-col">
+      <h4>About Tierytek</h4>
+      <p>We are experts in P.E.D (Pre-engineering building), roofing, and renovation. Building with integrity and innovation.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#services">Services</a></li>
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="index.html#news">News</a></li>
+        <li><a href="index.html#about tierytek const">About Tierytek</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="quote.html">Quotation</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Our Services</h4>
+      <ul>
+        <li><a href="services.html">Pre-Construction</a></li>
+        <li><a href="services.html">General Construction</a></li>
+        <li><a href="services.html"></a>House Renovation</li>
+        <li><a href="services.html">Plumbing</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact Info</h4>
+      <p><i class="fa-solid fa-location-dot"></i> 
+        <a href="https://www.google.com/maps?q=2,Olorunsogo+Street,+Off+Badagry+Exp.+Way,+Orile+Iganmu+Lagos" target="_blank">
+          2, Olorunsogo Street, Off Badagry Exp. Way, Orile Iganmu Lagos
+        </a>
+      </p>
+      <p><i class="fa-solid fa-phone"></i> 
+        <a href="tel:+23439169697">+234 3916 9697</a>
+      </p>
+      <p><i class="fa-solid fa-phone"></i> 
+        <a href="tel:+23452998888">+234 5299 8888</a>
+      </p>
+      <p><i class="fa-solid fa-envelope"></i> 
+        <a href="mailto:tierytek@gmail.com">tierytek@gmail.com</a>
+      </p>
+      <div class="social-icons">
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a> 
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Tierytek Constructions Steel Company. All rights reserved.</p>
+  </div>
+</footer>
